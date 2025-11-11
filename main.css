@@ -79,19 +79,19 @@ body {
 }
 
 /* social */
-.socialmedia {
+.showcialnmedia {
     margin-top: 30px;
     border-top: 1px solid white;
     padding-top: 10px;
 }
 
-.socialmedia a {
+.showcialnmedia a {
     text-decoration: none;
     font-size: 30px;
     padding: 8px;
     color: chocolate;
 }
-.socialmedia a:hover {
+.showcialnmedia a:hover {
     color: aqua;
 }
 
