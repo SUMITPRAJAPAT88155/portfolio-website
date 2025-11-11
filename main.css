@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Roboto', sans-serif;
+    color: #a0a0a0;
+    line-height: 1.6;
+}
+
+.main-container {
+    display: grid;
+    max-width: 1200px;
+    grid-template-columns: 350px 1fr;
+    gap: 40px;
+    padding-top: 40px;
+    margin: auto;
+}
+
+.sidebar {
+    height: 90vh;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.mainbar {
+    background-color: #2a2a2a;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* profile */
+.myprofile {
+    text-align: center;
+}
+
+.myprofile img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 1px solid #3a3a3a;
+}
+
+.myprofile h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #e0e0e0;
+}
+
+.myprofile p {
+    background: #1e1e1e;
+    padding: 5px 15px;
+    color: #ffbf00;
+    border: 1px solid #3a3a33;
+    font-size: .8rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* contact */
+.email, .phone, .location {
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.value {
+    color: chocolate;
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+}
+
+/* social */
+.socialmedia {
+    margin-top: 30px;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 8px;
+    color: chocolate;
+}
+.socialmedia a:hover {
+    color: aqua;
+}
+
+/* navbar */
+.navigation {
+    padding: 20px;
+    border-bottom: 2px solid white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    justify-content: flex-end;
+}
+
+nav a {
+    color: rgba(16, 196, 209, 0.8);
+    font-size: 20px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav a:hover, .active {
+    color: #ffbf00;
+}
+
+/* about */
+#aboutme {
+    padding: 10px;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.line {
+    width: 100px;
+    background: #ffbf00;
+    height: 2px;
+    margin: 5px 0 10px 0;
+}
+
+.content {
+    text-align: justify;
+    font-size: 18px;
+    color: lightcyan;
+}
+
+/* skills */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+}
+
+.item {
+    background: #1e1e1e;
+    border: 1px solid wheat;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    transition: .3s;
+}
+
+.item img {
+    width: 48px;
+    height: 48px;
+    background: #ffbf00;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px aqua;
+}
+
+.item h3 {
+    padding: 10px;
+    font-size: 1rem;
+    color: aqua;
+}
+
+/* education */
+#education {
+    margin-top: 20px;
+}
+
+.education1 {
+    text-align: justify;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.collagename {
+    font-style: italic;
+    color: rgba(255, 251, 0, .6);
+    font-size: 20px;
+}
+
+.dp {
+    color: lightcyan;
+}
+
+/* portfolio */
+.project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding: 10px;
+}
+
+.projects {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.projects img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px;
+}
+
+.ph {
+    color: lightcyan;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.projectd {
+    text-align: justify;
+    font-family: sans-serif;
+    color: lightcyan;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+    .main-container { grid-template-columns: 1fr; }
+    nav ul { justify-content: center; flex-wrap: wrap; }
+    .project-container { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    nav a { font-size: 16px; }
+    .heading { font-size: 26px; }
+    .content { font-size: 15px; }
+}
+
+@media (max-width: 480px) {
+    .myprofile img { width: 90px; height: 90px; }
+    .project-container { gap: 15px; }
+}
